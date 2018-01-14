@@ -1,3 +1,16 @@
+Visitor Pattern (JAVA)
+
+File Processing Decorators
+
+Design a visitor, PopulateVisitor, that reads from an input file and stores it in a tree. You can decide what kind of tree to use. The visitor should return a reference to this tree. The element for this visitor is the name of the input file the TreeBuilder (or whatever class has all the methods needed to build a tree). All assumptions about the input file in assignment-4 are also applicable here.
+Design a visitor, PalindromeHighlight, that takes the tree as an element, created by the previous visitor, and updates the tree's content by modifying all the Palindrome words, greater than 3 characters, to be capitalized. Please note that except creating the tree, PopulateVisitor should NOT store any information in the tree to help this visitor.
+Design a visitor, PrimeLength, that takes the tree as an element, which was returned by the previous visitor, and updates the tree's content by modifying all the words whose length is a prime number, by adding a suffix "-PRIME" to the string.
+Design a visitor, PrintTree, that takes the tree as an element, which was returned by the previous visitor, and prints the tree's distinct words, in ascending (alphanumeric) order, in the output file.
+From the command line accept the input file name, output file name, and debug level.
+
+
+
+
 ## To clean:
 ant -buildfile src/build.xml clean
 -----------------------------------------------------------------------
@@ -22,7 +35,7 @@ grade of 0 for the involved assignment for my first offense and that I
 will receive a grade of F for the course for any additional
 offense.
 
-[Date: 11/21/2017 ] Paritosh Fulara , Harsh Mohan Gajra
+
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
 
